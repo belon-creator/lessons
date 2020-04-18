@@ -11,7 +11,7 @@
 //   console.log('not enough money');
 // }
 
-const totalExpenses = 2000;
+const totalExpenses = 20000;
 const payment = 100;
 let discount = 0;
 

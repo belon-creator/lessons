@@ -19,3 +19,22 @@ console.log('canOpenChat', canOpenChat);
 const subscription = 'pro';
 const canAccesContent = subscription === 'pro' || subscription === 'vip';
 console.log('canAccesContent: ', canAccesContent);
+
+// ======================
+prompt('enter number');
+const code = 15;
+
+switch (code) {
+  case 15:
+    console.log('simple');
+    break;
+  case 16:
+    console.log('base');
+  case 17:
+    console.log('extended');
+  case 18:
+    console.log('premium');
+  default:
+    console.log('unknown');
+    break;
+}
