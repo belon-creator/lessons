@@ -115,3 +115,70 @@ console.log(styles);
 
 styles.splice(0, 0, 'Рэп', 'Регги');
 console.log(styles);
+
+// ========================================
+/* поиск*/
+// ========================================
+
+const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+const nameToFind = 'Poly';
+let message = 'There is no such friend';
+
+for (const friend of friends) {
+  if (nameToFind === friend) {
+    message = 'Your friend is here';
+  }
+}
+
+console.log(message);
+
+// ========================================
+/* slugs*/
+// ========================================
+
+const slugify = function (string) {
+  const words = string.toLowerCase().split(' ');
+  const slug = words.join('-');
+
+  return slug;
+};
+
+const articles = [
+  'Top 10 benefits of React framework',
+  'Data Protection and protecting your users in light of GDPR',
+  'How to Find Unique and Memorable Name for Your Product',
+  'Build Mean Stack Application',
+  '11 fruitful resources to improve Javascript knowledge',
+];
+
+const slugs = [];
+
+for (const article of articles) {
+  const slug = slugify(article);
+  slugs.push(slug);
+}
+
+console.log(slugs);
+
+// ========================================
+/* add tag to string*/
+// ========================================
+
+const posts = ['post-1', 'post-2', 'post-3', 'post-4'];
+const tag = '#jqueryrules';
+
+const postsWithTag = [];
+
+for (const post of posts) {
+  postsWithTag.push(`${post}${tag}`);
+}
+
+console.log(postsWithTag);
+
+// const addTag = function (tag, ...args) {
+//   const postsWithTag = [];
+
+//   for (const arg of args) {
+//     postsWithTag.push(`${arg}${tag}`);
+//   }
+// };
