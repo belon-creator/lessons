@@ -12,6 +12,7 @@ console.log(typeof hobby);
 
 console.log('before');
 alert('Hello');
+alert(`My name is ${FIRST_NAME}, I'm ${age} old, my hobby is ${hobby}`);
 console.log('after');
 
 // ===========================================================

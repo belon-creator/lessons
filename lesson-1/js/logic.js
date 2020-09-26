@@ -21,7 +21,7 @@ const canAccesContent = subscription === 'pro' || subscription === 'vip';
 console.log('canAccesContent: ', canAccesContent);
 
 // ======================
-prompt('enter number');
+prompt('enter your number');
 const code = 15;
 
 switch (code) {
