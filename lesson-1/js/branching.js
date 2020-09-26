@@ -33,3 +33,43 @@ console.log(finalAmmount);
 console.log(
   `draw up your order, total ${finalAmmount} with ${discount * 100}% discount`
 );
+
+// ============================================================
+
+let cost;
+const subscription = 'premium';
+
+// if (subscription === 'free') {
+//   cost = 0;
+// } else if (subscription === 'pro') {
+//   cost = 100;
+// } else if (subscription === 'premium') {
+//   cost = 500;
+// } else {
+//   console.log('invalid subscription');
+// }
+
+switch (subscription) {
+  case 'free':
+    cost = 0;
+    break;
+
+  case 'pro':
+    cost = 100;
+    break;
+
+  case 'premium':
+    cost = 500;
+    break;
+
+  default:
+    console.log('invalid subscription');
+}
+
+console.log(cost);
+
+// ========================================
+
+const age = 20;
+const type = age >= 18 ? 'adult' : 'child';
+console.log(type);

@@ -21,3 +21,9 @@ console.log(power);
 
 const result = Math.pow(userNumber, power);
 console.log(result);
+
+// ==============================================================
+
+const valueA = '8';
+console.log(Number(valueA));
+console.log(typeof Number(valueA));
