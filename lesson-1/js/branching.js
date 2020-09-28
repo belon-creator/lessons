@@ -68,6 +68,37 @@ switch (subscription) {
 
 console.log(cost);
 
+// ===
+
+const stars = 5;
+let price = 0;
+
+switch (stars) {
+  case 1: {
+    price = 20;
+    break;
+  }
+
+  case 2:
+  case 3: {
+    price = 50;
+    break;
+  }
+
+  case 4: {
+    price = 70;
+    break;
+  }
+
+  case 5: {
+    price = 100;
+    break;
+  }
+  default:
+    console.log('there is no such type');
+}
+console.log(`Your hotel room costs ${price} $`);
+
 // ========================================
 
 const age = 20;
