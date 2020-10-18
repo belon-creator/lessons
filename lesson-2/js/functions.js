@@ -138,3 +138,36 @@ const findSmallestNumber = function (items) {
 
 console.log(findSmallestNumber(arr1));
 console.log(findSmallestNumber(arr2));
+
+// ======================================
+
+const addArgs = function (...args) {
+  console.log(args);
+  let total = 0;
+
+  for (const arg of args) {
+    total += arg;
+  }
+  return total;
+};
+
+console.log(addArgs(1, 2, 3));
+console.log(addArgs(1, 2, 3, 4, 5, 6, 7, 8));
+
+// ============================
+
+const posts = ['post-1', 'post-2', 'post-3', 'post-4'];
+const tag = '#jqueryrules';
+
+const addTag = function (tag, ...args) {
+  const postWithTag = [];
+
+  for (const arg of args) {
+    postWithTag.push(`${arg}${tag}`);
+  }
+  return postWithTag;
+};
+
+console.log(addTag('#jqueryrules', 'post-1', 'post-2'));
+console.log(addTag('#react', 'post-1', 'post-2', 'post-3'));
+console.log(addTag('#redux', 'post-1', 'post-2', 'post-3', 'post-4'));
