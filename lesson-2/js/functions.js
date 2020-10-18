@@ -119,3 +119,22 @@ const addCard = function (allCards, cardToInsert, index) {
 
 addCard(cards, 'card-100', 2);
 console.log(cards);
+
+// ========================================
+
+const arr1 = [67, -3, 45, 3, 78, 90, 2];
+const arr2 = [67, 79, 45, 3, 2];
+
+const findSmallestNumber = function (items) {
+  let smallestNumber = items[0];
+
+  for (let i = 1; i < items.length; i += 1) {
+    if (items[i] < smallestNumber) {
+      smallestNumber = items[i];
+    }
+  }
+  return smallestNumber;
+};
+
+console.log(findSmallestNumber(arr1));
+console.log(findSmallestNumber(arr2));
