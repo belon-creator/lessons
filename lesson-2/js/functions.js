@@ -171,3 +171,22 @@ const addTag = function (tag, ...args) {
 console.log(addTag('#jqueryrules', 'post-1', 'post-2'));
 console.log(addTag('#react', 'post-1', 'post-2', 'post-3'));
 console.log(addTag('#redux', 'post-1', 'post-2', 'post-3', 'post-4'));
+
+// ===============================
+
+const withdraw = function (ammount, balance) {
+  if (ammount === 0) {
+    console.log('Для проведения операции введите сумму больше нуля.');
+    return;
+  }
+
+  if (ammount > balance) {
+    console.log('Недостаточно средств на счету.');
+    return;
+  }
+  console.log('Операция снятия средств проведена.');
+};
+
+withdraw(0, 300);
+withdraw(500, 300);
+withdraw(100, 300);
